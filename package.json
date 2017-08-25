@@ -1,0 +1,27 @@
+{
+  "name": "nonfsf",
+  "version": "1.0.0",
+  "description": "Non-Free Software Foundation",
+  "main": "server.js",
+  "dependencies": {
+    "connect": "^3.6.3",
+    "express": "^4.15.4",
+    "path": "^0.12.7",
+    "serve-static": "^1.12.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/snug/nonfsf.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/snug/nonfsf/issues"
+  },
+  "homepage": "https://github.com/snug/nonfsf#readme"
+}
