@@ -1,0 +1,1271 @@
+
+	<!DOCTYPE html>
+
+	<html lang="en">
+
+	    
+    
+    
+    
+    
+
+	  
+<!-- Mirrored from www.fsf.org/campaigns/secure-boot-vs-restricted-boot/whitepaper-web by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 31 Aug 2017 13:24:04 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+	    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+            <meta http-equiv="Keywords" content="FSF, Free Software Foundation, Free Software, Libre Software" />
+            <meta http-equiv="Description" content="The FSF is a charity with a worldwide mission to advance software freedom." />
+
+
+
+
+
+
+	
+
+	    
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+	    
+		<base  /><!--[if lt IE 7]></base><![endif]-->
+	    
+
+	    
+		<meta name="viewport" content="width=device-width; initial-scale=0.6666; maximum-scale=1.0; minimum-scale=0.6666" />
+		<meta name="generator" content="Plone - http://plone.org" />
+	    
+
+        
+
+	    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	    <meta name="generator" content="Plone - http://plone.org" />
+
+
+	   <title>Free Software Foundation recommendations for free operating system distributions considering Secure Boot &mdash; Free Software Foundation &mdash; working together for free software</title>
+
+
+	    
+	    
+
+	    
+	    
+
+	    
+	    
+
+	    
+	    
+
+	    <link rel="copyright" title="Copyright information" href="http://creativecommons.org/licenses/by-nd/3.0/rdf" />
+	    <link rel="author" title="Author information" href="http://about/staff/" />
+
+	<link rel="stylesheet" media="print" href="http://static.fsf.org/nosvn/plone3/css/print-2011-10-13.css" />
+	<style type="text/css" media="screen"> @import url('http://static.fsf.org/nosvn/plone4/css/fsf-2016-11-15.css');</style>
+
+
+	<link rel="alternate" title="FSF News" href="http://static.fsf.org/fsforg/rss/news.xml" type="application/rss+xml" />
+	<link rel="alternate" title="FSF Events" href="http://static.fsf.org/fsforg/rss/events.xml" type="application/rss+xml" />
+	<link rel="alternate" title="FSF Blogs" href="http://static.fsf.org/fsforg/rss/blogs.xml" type="application/rss+xml" />
+	<link rel="alternate" title="Free Software Jobs" href="http://static.fsf.org/fsforg/rss/jobs.xml" type="application/rss+xml" />
+	<link rel="alternate" title="GNU Project News" href="http://www.gnu.org/rss/whatsnew.rss" type="application/rss+xml" />
+	<link rel="alternate" title="New Free Software" href="http://www.gnu.org/rss/quagga.rss" type="application/rss+xml" />
+
+	<meta name="viewport" content="width=device-width" />
+
+
+<style type="text/css">
+#breadcrumbs-you-are-here,
+#breadcrumbs-home,
+#breadcrumbs-current,
+#breadcrumbs-1 {
+    display: none;
+}
+
+.GNUreleases{
+	background-color: #ffffe3;
+    border: 1px solid #000000;
+    color: Black;
+    font-weight: bold;
+    width: 200px;
+    padding: 10px;
+}
+
+#portal-languageselector {display: block; position: absolute !important; bottom: 1px; left: 1px;}
+.navi {
+       margin-top: 0px;
+}
+
+
+
+
+</style>
+	  </head>
+
+
+	<body dir="ltr" class="template-document_view portaltype-document site-fsf section-campaigns subsection-secure-boot-vs-restricted-boot subsection-secure-boot-vs-restricted-boot-whitepaper-web icons-on userrole-anonymous">
+
+<!-- This is where banners go -->
+
+<!--
+    <iframe src="//static.fsf.org/nosvn/banners/libreplanet/libreplanet-banner.html" width="100%" height="70" align="center"
+    frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="margin-bottom: 25px;">
+  </iframe>-->
+
+<div id="coolio">
+	<p class="onlyMobile"><a tabindex="1" href="#content">Skip to content</a>, <a tabindex="2" href="http://www.fsf.org/sitemap#content">sitemap</a> or <a tabindex="3" href="http://www.fsf.org/search_form#content">skip to search</a>.</p>
+
+        <div id="hd" style="margin-bottom: 10px; margin-top: 6px;" class="custom-doc visualNoPrint">
+                <header>
+
+                        
+                        <a href="http://www.fsf.org/">
+                                <img id="fsf-logo" style="position: absolute; bottom: 0px;" src="http://static.fsf.org/common/img/logo-new.png" />
+                        </a>
+                        <div id="portal-personaltools-wrapper">
+
+<div id="fsf-custom">
+
+<h5 class="hiddenStructure">Personal tools</h5>
+
+<ul id="portal-personaltools">
+  
+
+    
+    <li>
+       <a href="https://my.fsf.org/civicrm/member-dashboard" id="personaltools-login">Log in</a>
+  </li>
+    
+    
+    <li>
+       <a href="http://www.fsf.org/help-menu" id="personaltools-login-problems">Help!</a>
+  </li>
+    
+    
+    <li>
+       <a href="http://www.fsf.org/associate/about-the-members-forum" id="personaltools-forum-promo">Members forum</a>
+  </li>
+    
+
+</ul>
+</div>
+</div>
+                        <a href="http://fsf.org/jfb">
+                                <img id="join-button" src="http://static.fsf.org/nosvn/join.en.png" alt="Join now" style="float: right;" />
+                        </a>
+                </header>
+        </div>
+
+	<div class="yui-g" id="fsf-nav">
+                <div class="navi">
+<div>
+<div class="custom-doc">
+
+<nav>
+<ul class="main-nav navigation">
+<li><a href="http://www.fsf.org/about/" title="">About</a></li>
+<li><a href="http://www.fsf.org/campaigns/" title="">Campaigns</a></li>
+<li><a href="http://www.fsf.org/licensing/" title="">Licensing</a></li>
+<li><a href="http://www.fsf.org/associate/" title="">Membership</a></li>
+<li><a href="http://www.fsf.org/resources/" title="">Resources</a></li>
+<li><a href="http://www.fsf.org/community/" title="">Community</a></li>
+<li><a href="http://www.fsf.org/donate/" title="">Donate</a></li>
+<li><a href="http://shop.fsf.org/" title="">Shop</a></li>
+</ul>
+</nav>
+
+</div>
+</div>
+</div>
+        </div>
+
+	<div class="custom-doc yui-t5">
+
+	   <div id="bd"><div id="yui-main">
+
+
+<div class="yui-g"><div class="yui-b">
+
+
+
+        <div id="portal-column-content" class="cell width-3:4 position-0">
+
+            <div id="viewlet-above-content"><div id="portal-breadcrumbs">
+
+    <span id="breadcrumbs-you-are-here">You
+are here:</span>
+    <span id="breadcrumbs-home">
+        <a href="http://www.fsf.org/">Home</a>
+        <span class="breadcrumbSeparator">
+            &rsaquo;
+            
+        </span>
+    </span>
+    <span dir="ltr" id="breadcrumbs-1">
+        
+            <a href="http://www.fsf.org/campaigns">Campaigns</a>
+            <span class="breadcrumbSeparator">
+                &rsaquo;
+                
+            </span>
+            
+         
+    </span>
+    <span dir="ltr" id="breadcrumbs-2">
+        
+            <a href="http://www.fsf.org/campaigns/secure-boot-vs-restricted-boot">Secure Boot vs Restricted Boot</a>
+            <span class="breadcrumbSeparator">
+                &rsaquo;
+                
+            </span>
+            
+         
+    </span>
+    <span dir="ltr" id="breadcrumbs-3">
+        
+            
+            
+            <span id="breadcrumbs-current">Free Software Foundation recommendations for free operating system distributions considering Secure Boot</span>
+         
+    </span>
+
+</div></div>
+
+            
+                <div class="">
+
+                    
+
+                    
+
+    <dl class="portalMessage info" id="kssPortalMessage" style="display:none">
+        <dt>Info</dt>
+        <dd></dd>
+    </dl>
+
+
+
+                    <article>
+                    
+                        <div id="content">
+
+                            
+
+                            
+
+                             <div id="viewlet-above-content-title"></div>
+                             
+                                 
+                                 
+            
+                <h1 id="parent-fieldname-title" class="documentFirstHeading">
+                    Free Software Foundation recommendations for free operating system distributions considering Secure Boot
+                </h1>
+            
+            
+        
+                             
+                             <div id="viewlet-below-content-title"><div class="documentByLine" id="plone-document-byline">
+  
+
+  
+    <span class="documentAuthor">
+      by
+      <a href="http://www.fsf.org/author/johns">John Sullivan</a>
+
+      <a href="http://www.fsf.org/contribs/johns" class="netscape4">
+        Contributions
+      </a>
+
+    </span>
+  
+
+  <span class="documentModified">
+    &mdash;
+    <span>
+      Published on
+    </span>
+    Jun 30, 2012 06:22 PM
+  </span>
+
+  
+
+  
+
+  
+
+  
+
+
+</div></div>
+
+                             
+                                 
+                                 
+            
+                
+            
+            
+        
+                             
+
+                             <div id="viewlet-above-content-body">
+
+</div>
+                             <div id="content-core">
+                                 
+    
+        
+        <div class="" id="parent-fieldname-text-d87de416-32c4-4f3a-a062-6bda7f893774">
+            <p><em>Please note this white paper will be updated in the near future to <a href="http://www.fsf.org/campaigns/secure-boot-vs-restricted-boot/blogs/community/update-on-the-effort-to-defeat-restricted-boot">reflect Ubuntu's decision to use GRUB2 as its bootloader</a>.</em> <br /></p>
+
+<h2>Introduction</h2>
+
+<p>
+<b>This paper is also available as <a href="http://www.fsf.org/campaigns/secure-boot-vs-restricted-boot/whitepaper.pdf">a PDF.</a></b>
+</p>
+
+<p>We have been working hard the last several months to <a href="http://www.fsf.org/campaigns/secure-boot-vs-restricted-boot/statement">stop Restricted
+Boot</a>,
+a major threat to user freedom, free software ideals, and free
+software adoption. Under the guise of security, a computer afflicted
+with Restricted Boot refuses to boot any operating systems other than
+the ones the computer distributor has approved in advance. Restricted
+Boot takes control of the computer away from the user and puts it in
+the hands of someone else.</p>
+
+<p>To respect user freedom and truly protect user security, computer
+makers must either provide users a way of disabling such boot
+restrictions, or provide a sure-fire way that allows the computer user
+to install a free software operating system of her choice.</p>
+
+<p>Distributors of restricted systems usually appeal to security
+concerns. They claim that if unapproved software can be used on the
+machines they sell, malware will run amok. By only allowing software
+they approve to run, they can protect us.</p>
+
+<p>This claim ignores the fact that <em>we</em> need protection from <em>them</em>. We
+don't want a machine that only runs software approved by <em>them</em> -- our
+computers should always run only software approved by <em>us</em>. We may
+choose to trust someone else to help us make those approval decisions,
+but we should never be locked into that relationship by force of
+technological restriction or law. Software that enforces such
+restrictions <em>is</em> malware. Companies like Microsoft that push these
+restrictions also have a terrible track record when it comes to
+security, which makes their platitudes about restricting us for our
+own good both hollow and deceitful.</p>
+
+<p>The GNU General Public License (GPLv3) shields our freedom against
+such restrictions. When you buy or rent a computer containing
+GPLv3-covered software, the license protects your freedom to use
+modified versions of that software in your computer. GPLv2 always
+required that users be able to do this, but one of the improvements in
+GPLv3 ensures that the freedoms all GPL versions are meant to provide
+can't be taken away by hardware that refuses to run modified software.</p>
+
+<p>When it comes to security measures governing a computer's boot
+process, GPLv3's terms lead to one simple requirement: Provide clear
+instructions and functionality for users to disable or fully modify
+any boot restrictions, so that they will be able to install and run a
+modified version of any GPLv3-covered software on the system.</p>
+
+<p>Secure Boot is one such measure, defined by a UEFI standard, but
+discussion about it has primarily revolved around the rules
+established by Microsoft in its Windows 8 Logo program. These rules
+say what computer distributors have to do in order to have their
+systems be Microsoft-approved. Part of this includes implementing
+Secure Boot in specific ways.</p>
+
+<p>In order to comply with Microsoft's rules as currently published,
+distributors of x86 computers will have to provide users both the
+option to customize Secure Boot by using their own security keys, and
+the option to disable it completely.</p>
+
+<p>Secure Boot, done right, embodies the free software view of security,
+because it puts users -- whether individuals, government agencies, or
+organizations -- in control of their machines. Our thought experiment
+to demonstrate this is simple: Microsoft may be worried about malware
+written to take over Windows machines, but we view Windows itself as
+malware and want to keep <em>it</em> away from our machines. Does Secure Boot
+enable us to keep Windows from booting on a machine? It does: We can
+remove Microsoft's key from the boot firmware, and add our own key or
+other keys belonging to free software developers whose software we
+wish to trust.</p>
+
+<h2>So what's the problem?</h2>
+
+<p>In theory, there should be no problem. In practice, the situation is
+more complicated. As currently proposed, Secure Boot impedes free
+software adoption. It is already bad enough that nearly all computers
+sold come with Microsoft Windows pre-installed. In order to convince
+users to try free software, we must convince them to remove the
+operating system that came on their computers (or to divide their hard
+drives and make room for a new system, perceptually risking their data
+in the process).</p>
+
+<p>With Secure Boot, new free software users must take an additional step
+to install free software operating systems. Because these operating
+systems do not have keys stored in every computer's firmware by
+default like Microsoft does, users will have to disable Secure Boot
+before booting the new system's installer. Proprietary software
+companies may present this requirement under the guise of "disable
+security on your computer," which will mislead new users into thinking
+free software is insecure.</p>
+
+<p>Without a doubt, this is an obstacle we don't need right now, and it
+is highly questionable that the security gains realized from Secure
+Boot outweigh the difficulties it will cause in practice for users
+trying to <em>actually</em> provide for their own security by escaping
+Microsoft Windows.</p>
+
+<p>It's also a problem because the Windows 8 Logo program currently
+<em>mandates</em> Restricted Boot on all ARM systems, which includes popular
+computer types like tablets and phones. It says that users must not be
+able to disable the boot restrictions or use their own signing keys.
+In addition to being unacceptable in its own right, this requirement
+was a reversal from Microsoft's initial public position, which claimed
+that the Windows 8 program would not block other operating systems
+from being installed. With this deception, Microsoft has demonstrated
+that they can't be trusted. While we are interpreting their current
+guidelines, we must keep in mind that they could change their mind
+again in the future and expand the ARM restrictions to more kinds of
+systems.</p>
+
+<p>The best way out of all of this (other than having all computers come
+pre-installed with free software) would be for free software operating
+systems to <em>also</em> be installable by default on any computer, without
+needing to disable Secure Boot. In the last few weeks, we've seen two
+major GNU/Linux distributions, Fedora and Ubuntu, sketch out two
+different paths in an attempt to achieve this goal.</p>
+
+<h2>Fedora's approach</h2>
+
+<p><a href="http://mjg59.dreamwidth.org/12368.html">Fedora's default approach to official
+distribution</a> has the project
+joining a Microsoft and Verisign developer program which will give
+them a key that can then be used to sign a "shim" bootloader. This
+shim loads <a href="http://www.gnu.org/software/grub">GRUB 2</a>, the
+GPLv3-covered GNU program whose job it is to boot the operating system
+kernel, in this case Linux. Because Fedora's key will be "vouched" by
+Microsoft, it will be recognized by the firmware on the vast majority
+of desktops and laptops available.</p>
+
+<p>Fedora also suggests that others use this option for unofficial
+distribution of modified Fedora software, or any other free software
+operating system. Anyone can pay $99 and get their own
+Microsoft-backed key which they can then use to sign the software they
+wish to run and/or share.</p>
+
+<p>Fedora is not <em>requiring</em> users to join the Microsoft program. Users
+can also create and use their own keys, with a little more work. The
+Microsoft program is the route they chose for official Fedora
+distributions, but they will also provide utilities and support for
+users wishing to work with their own self-generated keys.</p>
+
+<p>There is much to like about Fedora's thinking, as explained by Matthew
+Garrett. Their process of deliberation evinced concern for user
+freedom; it's clear that the Fedora team sought a solution that would
+work not just for their own GNU/Linux distribution, but for as many
+free software users and distributions as possible. Their discussion
+was also mindful of the desirability of empowering users to sign and
+run their own modified software without being treated as second-class
+citizens. Unsurprisingly, with those concerns guiding their thinking,
+they have ended on a proposal which as described is compliant with
+GPLv3.</p>
+
+<p>Unfortunately, while it is compliant with the license of GRUB 2 and
+any other GPLv3-covered software, we see two serious problems with the
+Microsoft program approach.</p>
+
+<p>1) Users wishing to run in a Secure Boot environment will have to
+  trust Microsoft in order to boot official Fedora. The Secure Boot
+  signing format currently allows only one signature on a binary -- so
+  Fedora's shim bootloader can be signed only by the Microsoft-vouched
+  key. If a user removes Microsoft's key, official Fedora will no
+  longer boot, as long as Secure Boot is on.</p>
+
+<p>2) We reject the recommendation that others join the Microsoft
+  developer program. In addition to the $99 expense being a barrier
+  for many people around the world, the process for joining this
+  program is objectionable. A nonexhaustive list of the problems
+  includes: restrictive terms in multiple of the half-dozen contracts
+  that must be signed, a forced commitment "to receive targeted
+  advertisements and periodic member email messages from Microsoft,"
+  and a requirement to provide notarized proof of government-issued
+  identification and a credit card.</p>
+
+<p>These are not acceptable conditions for modifying or using your
+operating system. For the time being, we should instead rely on the
+approach Fedora will support for unofficial distribution -- providing
+tools and materials for users who want to install and use their own
+keys.</p>
+
+<p>Software signed with self-generated keys has the downside of not
+working on the majority of computers right off the shelf, without the
+user taking some extra steps. We acknowledge that this is an issue,
+but in addition to insisting on (and contributing to) documentation to
+make the necessary process easy to follow, we will strive to solve
+this problem through political action against manufacturers and
+proprietary software companies who impede free software adoption.
+Encouraging free software distributors and users to trust Microsoft or
+any other proprietary software company as a precondition to exercising
+their freedoms is simply not an acceptable solution.</p>
+
+<h2>Ubuntu's approach</h2>
+
+<p>Ubuntu has also <a href="http://blog.canonical.com/2012/06/22/an-update-on-ubuntu-and-secure-boot/">announced a
+plan</a>
+which is further described in <a href="https://lists.ubuntu.com/archives/ubuntu-devel/2012-June/035445.html">a message to the Ubuntu developers'
+mailing
+list</a>.
+Their plan addresses software distributed through three different
+channels:</p>
+
+<p>1) Machines sold as "Ubuntu Certified," preinstalled with Ubuntu,
+  will have an Ubuntu-specific key, generated by Canonical, in their
+  firmware. Additionally, they will be required by the certification
+  guidelines to have the Microsoft key installed.</p>
+
+<p>2) Ubuntu CDs, distributed separately from hardware, will also
+  depend on the presence of Microsoft's key in the machine's firmware
+  to boot, when Secure Boot is active.</p>
+
+<p>3) Ubuntu bootloader images distributed online from the official
+  Ubuntu archive will be signed by Ubuntu's own key.</p>
+
+<p>In the first two situations, because of the requirement to have the
+Microsoft key, their approach has the same issue as Fedora's official
+method. Users have to trust Microsoft in order to boot official Ubuntu
+CDs. Their certification program amplifies this problem, because it
+means no one can sell certified Ubuntu machines without trusting
+Microsoft.</p>
+
+<p>As with Fedora, on a system with Secure Boot properly implemented,
+Ubuntu users will be able to add their own keys, or Ubuntu's key.</p>
+
+<p>Our main concern with the Ubuntu plan is that because they are afraid
+of falling out of compliance with GPLv3, they plan to drop GRUB 2 on
+Secure Boot systems, in favor of another bootloader with a different
+license that lacks GPLv3's protections for user freedom. Their stated
+concern is that someone might ship an Ubuntu Certified machine with
+Restricted Boot (where the user cannot disable it). In order to comply
+with GPLv3, Ubuntu thinks it would then have to divulge its private
+key so that users could sign and install modified software on the
+restricted system.</p>
+
+<p>This fear is unfounded and based on a misunderstanding of GPLv3. We
+have not been able to come up with any scenario where Ubuntu would be
+forced to divulge a private signing key because a third-party computer
+manufacturer or distributor shipped Ubuntu on a Restricted Boot
+machine. In such situations, the computer distributor -- not Canonical
+or Ubuntu -- would be the one responsible for providing the
+information necessary for users to run modified versions of the
+software.</p>
+
+<p>Furthermore, addressing the threat of Restricted Boot by weakening the
+license of the bootloader is backwards. With a weaker license,
+companies will now have a form of <em>advance permission</em> to obstruct the
+user's ability to run modified software. Rather than work to make sure
+this situation does not happen -- for example by enforcing the proper
+Secure Boot implementation they say they "strongly support in [their]
+own firmware guidelines" -- Ubuntu has chosen a path which explicitly
+<em>allows</em> Restricted Boot.</p>
+
+<p>No representative from Canonical contacted the FSF about these issues
+prior to announcing the policy. This is unfortunate because the FSF,
+in addition to being the primary interpreter of the license in
+question, is the copyright holder of GRUB 2, the main piece of
+GPLv3-covered software at issue.</p>
+
+<p>It is not too late to change. We urge Ubuntu and Canonical to reverse
+this decision, and we offer our help in working through any licensing
+concerns. We also hope that Ubuntu, like Fedora, will actively support
+users generating and using their own signing keys to run and share any
+versions of the software, and not require users to install a key from
+Canonical to get the full benefit of their operating system.</p>
+
+<h2>What's the FSF doing to help solve these problems?</h2>
+
+<p>Secure Boot raises many issues for protecting user freedom, promoting
+free software ideals, and encouraging free software adoption.
+Addressing it requires a multifaceted approach. Assessing the
+solutions popular GNU/Linux distributions have proposed is one aspect,
+but we will also take proactive measures of our own.</p>
+
+<ul>
+<li><p>We will continue to build public support around our statement
+against Restricted Boot. Over 31,000 people and 25 organizations
+have signed <a href="http://www.fsf.org/campaigns/secure-boot-vs-restricted-boot/statement">this
+statement</a>,
+pledging not to buy any computer that they cannot install a free
+operating system on, and to advise others to do the same. We were
+pleased last week to add Debian GNU/Linux as an official
+organizational supporter of the statement. Subsequently, Trisquel
+and gNewSense have also added their signatures. When further
+actions need to be taken to stand up for this freedom as Secure
+Boot and Restricted Boot are rolled out, we will call upon this
+base of support. If you haven't yet signed, <a href="http://www.fsf.org/campaigns/secure-boot-vs-restricted-boot/statement">please
+do</a>.</p></li>
+<li><p>We will fight Microsoft's attempt at enforcing Restricted Boot on
+ARM devices like smartphones and tablets. Like any other computer,
+users must be able to install free software operating systems on
+these devices. We will monitor Microsoft's behavior to make sure
+they do not deceive the public again by expanding these
+restrictions to other kinds of systems.</p></li>
+<li><p>We will work with (and when necessary, pressure) manufacturers and
+distributors to make the user instructions for working with Secure
+Boot on all systems extremely clear, so that users will be able to
+disable it and modify the approved keys with little difficulty and
+no bias. We will also work to make sure that users can change
+<em>all</em> of the software running on their machine, including the boot
+firmware itself.</p></li>
+<li><p>We will offer our <a href="http://www.fsf.org/licensing">licensing and compliance
+resources</a> to any free software
+developers to help them make sure they are complying with the GPL
+and other licenses as they implement Secure Boot. We will monitor
+distributions of signed GPLv3 software to ensure that they respect
+the necessary user freedoms, including providing installation
+instructions and materials.</p></li>
+<li><p>We have already started exploring ways in which the FSF can work
+with manufacturers on behalf of the entire free software community
+to make free software operating systems installable with default
+Secure Boot hardware settings.</p></li>
+<li><p>We will continue to work with companies like Lemote, Freedom
+Included, ZaReason, ThinkPenguin, Los Alamos Computers, Garlach44,
+and InaTux to make computers available that are <em>preinstalled</em>
+with <a href="http://www.gnu.org/distros/free-distros.html">fully free GNU/Linux
+distributions</a>.</p></li>
+<li><p>We will help provide information about which computers and
+components are most compatible with free software, including
+making people aware of which machines have Restricted Boot. Much
+of this information will be found at <a href="http://h-node.org/">http://h-node.org</a>.</p></li>
+</ul>
+
+<h2>Conclusion and recommendations</h2>
+
+<p>What we've offered here is our position based on the details published
+by all parties involved so far -- we will continue to assess the
+situation as these plans are actually put into practice, or changes
+are announced.</p>
+
+<p>Our focus is to evaluate proposed solutions to the issues posed by
+Secure Boot on the basis of how well they protect user freedom, to
+recommend the solutions that do the best job of that, and to stop
+attempts to turn Secure Boot into Restricted Boot.</p>
+
+<p>The best solution currently available for operating system
+distributions includes:</p>
+
+<p>1) fully supporting user-generated keys, including providing tools
+  and full documentation for booting and installing both modified and
+  official versions of the distribution using this method;</p>
+
+<p>2) using a GPLv3-covered bootloader to help protect users against
+  the dangers of Restricted Boot;</p>
+
+<p>3) avoiding requiring or encouraging users to trust Microsoft or any
+  company which makes proprietary software; and</p>
+
+<p>4) joining the FSF and the broader free software movement in
+  pressuring computer distributors to facilitate easy and independent
+  installation of free software operating systems on any computer.</p>
+
+<p>We will do what we can to help all free software operating system
+distributions follow this path, and we will work on a political level
+to reduce the practical difficulties that adhering to these principles
+might pose for expedient installation of free software. The FSF does
+want everyone to be able to easily install a free operating system --
+our ultimate goal is for everyone to do so, and the experience of
+trying out free software is a powerful way to communicate the
+importance of free software ideals to new people. But we cannot in the
+name of expediency or simplicity accept systems that direct users to
+put their trust in entities whose goal it is to extinguish free
+software. If that's the tradeoff, we better just turn Secure Boot
+off.</p>
+
+<p>Please support the FSF's work in this area by <a href="https://my.fsf.org/associate/support_freedom/join_fsf?referrer=10050">joining as a member</a> or making a <a href="https://donate.fsf.org/">one-time donation.
+</p>
+            
+        </div>
+    
+    
+
+                             </div>
+                             <div id="viewlet-below-content-body">
+
+<div class="visualClear"><!-- --></div>
+<div class="documentActions">
+    
+
+    <h5 class="hiddenStructure">Document Actions</h5>
+
+    <ul>
+        <li><b><a href="http://www.fsf.org/share?u=http://www.fsf.org/campaigns/secure-boot-vs-restricted-boot/whitepaper-web&amp;t=Free%20Software%20Foundation%20recommendations%20for%20free%20operating%20system%20distributions%20considering%20Secure%20Boot">Share on social networks</a></b></li>
+        <li>Syndicate:</li>
+        <li><a href="http://www.fsf.org/static/fsforg/rss/news.xml">News</a></li>
+        <li><a href="http://www.fsf.org/static/fsforg/rss/events.xml">Events</a></li>
+        <li><a href="http://www.fsf.org/static/fsforg/rss/blogs.xml">Blogs</a></li>
+        <li><a href="http://www.fsf.org/static/fsforg/rss/jobs.xml">Jobs</a></li>
+
+    
+        <li id="document-action-copy_of_full_screen">
+            <a href="http://www.gnu.org/rss/whatsnew.rss" title="">GNU</a>
+        </li>
+    
+    
+        <li id="document-action-print">
+            <a href="#" title=""></a>
+        </li>
+    
+
+    </ul>
+    
+
+    
+
+</div></div>
+
+                            
+                        </div>
+                    
+                    </article>
+
+                    
+                </div>
+            
+
+            <div id="viewlet-below-content">
+
+
+
+
+
+</div>
+        </div>
+	</div></div></div>
+
+
+	 <div id="fsf-sidebar" class="yui-b visualNoPrint">
+	    <aside>
+<span style="color:#fff;">1PC9aZC4hNX2rmmrt7uHTfYAS3hRbph4UN</span>
+	<div id="search">
+
+	      <form id="sidesearch" name="searchform" action="http://www.fsf.org/search">
+		  <p><input name="SearchableText" tabindex="1" type="text" size="30" title="Search Site" /></p>
+		  <p><input class="searchButton" type="submit" value="Search" /></p>
+	      </form>
+
+	</div>
+
+
+		      <div class="visualPadding">
+		        
+		          
+<div class="portletWrapper" data-portlethash="706c6f6e652e7269676874636f6c756d6e0a636f6e746578740a2f6673662f63616d706169676e730a74616b652d616374696f6e" id="portletwrapper-706c6f6e652e7269676874636f6c756d6e0a636f6e746578740a2f6673662f63616d706169676e730a74616b652d616374696f6e">
+<dl class="portlet portletStaticText portlet-static-take-action">
+
+    <dt class="portletHeader">
+        <span class="portletTopLeft"></span>
+        <span>
+           <a class="tile" href="http://www.defectivebydesign.org/no-drm-in-html5">Take Action!</a>
+        </span>
+        <span class="portletTopRight"></span>
+    </dt>
+
+    <dd class="portletItem odd">
+        <div style="width:150px; margin: 0px auto;">
+<a href="https://www.defectivebydesign.org/no-drm-in-html5">
+<img src="http://static.fsf.org/dbd/hollywebshare.jpeg" alt="NoDRMinHTML5" />
+</a>
+</div>
+        
+    </dd>
+    
+    <dd class="portletFooter">
+        <span class="portletBottomLeft"></span>
+        <span>
+           <a class="tile" href="http://www.defectivebydesign.org/no-drm-in-html5">Sign the Petition</a>
+        </span>
+        <span class="portletBottomRight"></span>
+    </dd>
+
+</dl>
+</div>
+
+<div class="portletWrapper" data-portlethash="706c6f6e652e7269676874636f6c756d6e0a636f6e746578740a2f6673662f63616d706169676e730a667265652d736f6674776172652d63616d706169676e73" id="portletwrapper-706c6f6e652e7269676874636f6c756d6e0a636f6e746578740a2f6673662f63616d706169676e730a667265652d736f6674776172652d63616d706169676e73">
+<dl class="portlet portletStaticText portlet-static-free-software-campaigns">
+
+    <dt class="portletHeader">
+        <span class="portletTopLeft"></span>
+        <span>
+           Free software campaigns
+        </span>
+        <span class="portletTopRight"></span>
+    </dt>
+
+    <dd class="portletItem odd">
+        <ul>
+<li><a href="http://www.gnu.org/">GNU Operating System</a></li>
+<li><a href="http://fsf.org/campaigns/freejs">Free JavaScript</a></li>
+<li><a href="http://www.fsf.org/campaigns/campaigns/secure-boot-vs-restricted-boot">Secure Boot vs. Restricted Boot</a></li>
+<li><a href="https://www.fsf.org/campaigns/surveillance">Protect Yourself from Surveillance</a></li>
+<li><a href="http://defectivebydesign.org/">Defective by Design</a></li>
+<li><a href="http://upgradefromwindows8.com/">Upgrade from Windows 8</a></li>
+<li><a href="http://playogg.org/">PlayOgg</a></li>
+<li><a href="http://endsoftpatents.org/">End Software Patents</a></li>
+<li><a href="http://www.fsf.org/campaigns/odf.html">OpenDocument campaign</a></li>
+<li><a href="http://www.fsf.org/campaigns/priority.html">High-priority projects</a></li>
+<li><a href="http://www.fsf.org/resources/hw">Hardware that supports free software</a></li>
+<li><a href="http://www.fsf.org/campaigns/free-bios.html">Free BIOS campaign</a></li>
+<li><a href="http://www.fsf.org/campaigns/past-campaigns">Past campaigns</a></li>
+</ul>
+        
+            <span class="portletBottomLeft"></span>
+            <span class="portletBottomRight"></span>
+        
+    </dd>
+    
+    
+
+</dl>
+</div>
+
+<div class="portletWrapper" data-portlethash="706c6f6e652e7269676874636f6c756d6e0a636f6e746578740a2f6673660a737570706f72746572" id="portletwrapper-706c6f6e652e7269676874636f6c756d6e0a636f6e746578740a2f6673660a737570706f72746572"><div class="portletStaticText portlet-static-supporter"><div style="text-align: center;">
+<h5>Sign up</h5>
+<form action="https://my.fsf.org/civicrm/profile/create?reset=1&amp;gid=31" method="post">
+<p>Enter your email address to receive our monthly newsletter, the<br /><a href="https://www.fsf.org/free-software-supporter/">Free Software Supporter</a></p>
+
+<p><input id="frmEmail" type="text" name="email-Primary" size="18" maxlength="80" /></p>
+<p><input type="submit" name="_qf_Edit_next" value="Subscribe me" /></p>
+<div><input name="postURL" type="hidden" value="" />
+<input type="hidden" name="group[25]" value="1" />
+<input name="cancelURL" type="hidden" value="https://my.fsf.org/civicrm/profile?reset=1&amp;gid=31" />
+<input name="_qf_default" type="hidden" value="Edit:cancel" />
+</div>
+</form></div></div>
+
+</div>
+
+<div class="portletWrapper" data-portlethash="706c6f6e652e7269676874636f6c756d6e0a636f6e746578740a2f6673660a6673662d6e6577732d727373" id="portletwrapper-706c6f6e652e7269676874636f6c756d6e0a636f6e746578740a2f6673660a6673662d6e6577732d727373"><div class="portletStaticText portlet-static-fsf-news-rss"><p style="float: right;"><a href="http://www.fsf.org/static/fsforg/rss/news.xml" title="Subscribe to an RSS feed of FSF news"><img src="http://www.fsf.org/static/fsforg/css/img/rss.gif" alt="RSS feed" /></a></p></div>
+
+</div>
+
+<div class="portletWrapper" data-portlethash="706c6f6e652e7269676874636f6c756d6e0a636f6e746578740a2f6673660a6e657773" id="portletwrapper-706c6f6e652e7269676874636f6c756d6e0a636f6e746578740a2f6673660a6e657773"><dl class="portlet portletNews" xmlns="http://www.w3.org/1999/xhtml">
+
+    <dt class="portletHeader">
+        <span class="portletTopLeft"></span>
+        <a href="http://www.fsf.org/news" class="tile">News</a>
+        <span class="portletTopRight"></span>
+    </dt>
+
+    
+    <dd class="portletItem odd">
+
+        <a href="http://www.fsf.org/news/fsf-announces-new-fiscal-sponsorship-for-seagl-conference" class="tile" title="BOSTON, Massachusetts, USA -- Tuesday, August 1, 2017 -- The Free Software Foundation (FSF) announced today that the Seattle GNU/Linux (SeaGL) Conference will join the Working Together for Free Software Fund, becoming the first conference fiscally sponsored by the FSF.">
+            <img width="16" height="16" src="http://www.fsf.org/static/fsforg/css/img/newsitem_icon.gif" alt="News Item" />
+            FSF announces new fiscal sponsorship for SeaGL conference
+            <span class="portletItemDetails">Aug 01, 2017</span>
+        </a>
+    </dd>
+    
+    
+    <dd class="portletItem even">
+
+        <a href="http://www.fsf.org/news/fifteen-new-devices-from-technoethical-now-fsf-certified-to-respect-your-freedom" class="tile" title="BOSTON, Massachusetts USA — Wednesday, June 28th, 2017 — The Free Software Foundation (FSF) today awarded Respects Your Freedom (RYF) certification to fifteen devices from Technoethical (formerly Tehnoetic): the TET-N150HGA, the TET-N300, the TET-N300HGA, the TET-N300DB, the TET-N450DB, the TET-BT4, the TET-X200, the TET-X200T, the TET-X200S, the TET-T400, the TET-400S, the TET-T500, the TET-X200DOCK, the TET-T400DOCK, and the TET-D16. The RYF certification mark means that the products meet the FSF's standards in regard to users' freedom, control over the product, and privacy.">
+            <img width="16" height="16" src="http://www.fsf.org/static/fsforg/css/img/newsitem_icon.gif" alt="News Item" />
+            Fifteen new devices from Technoethical now RYF-certified to respect your freedom
+            <span class="portletItemDetails">Jun 28, 2017</span>
+        </a>
+    </dd>
+    
+
+    <dd class="portletFooter">
+        <span class="portletBottomLeft"></span>
+        <a href="http://www.fsf.org/news">
+          More news&hellip;
+        </a>
+        <span class="portletBottomRight"></span>
+    </dd>
+    
+</dl></div>
+
+<div class="portletWrapper" data-portlethash="706c6f6e652e7269676874636f6c756d6e0a636f6e746578740a2f6673660a6673662d626c6f67732d727373" id="portletwrapper-706c6f6e652e7269676874636f6c756d6e0a636f6e746578740a2f6673660a6673662d626c6f67732d727373"><div class="portletStaticText portlet-static-fsf-blogs-rss"><p style="float: right;"><a href="http://www.fsf.org/static/fsforg/rss/blogs.xml" title="Subscribe to an RSS feed of FSF blogs"><img src="http://www.fsf.org/static/fsforg/css/img/rss.gif" alt="RSS feed" /></a></p></div>
+
+</div>
+
+<div class="portletWrapper" data-portlethash="706c6f6e652e7269676874636f6c756d6e0a636f6e746578740a2f6673660a726563656e742d626c6f6773" id="portletwrapper-706c6f6e652e7269676874636f6c756d6e0a636f6e746578740a2f6673660a726563656e742d626c6f6773"><dl class="portlet portletCollection portlet-collection-recent-blogs">
+
+    <dt class="portletHeader">
+        <span class="portletTopLeft"></span>
+        <a href="http://www.fsf.org/blogs/recent-blog-posts">
+            <span>Recent blogs</span>
+        </a>
+        <span class="portletTopRight"></span>
+    </dt>
+
+    
+    <dd class="portletItem odd">
+        <a href="http://www.fsf.org/blogs/community/fsf-at-debconf17-john-molly-take-montreal-1" class="tile contenttype-blog-entry" title="I wrapped up my summer travel with a trip to Montreal, Quebec (Canada) for DebConf 17. This was my fourth time attending the annual Debian conference--which changes countries each year--and my first time presenting.">
+            FSF at DebConf17: John &amp; Molly take Montreal
+            
+        </a>
+    </dd>
+    
+    
+    <dd class="portletItem even">
+        <a href="http://www.fsf.org/blogs/directory/free-software-directory-meeting-recap-for-august-18th-2017" class="tile contenttype-blog-entry" title="Check out the great work our volunteers accomplished at the last Free Software Directory meeting.">
+            Free Software Directory meeting recap for August 18th, 2017
+            
+        </a>
+    </dd>
+    
+    
+    <dd class="portletItem odd">
+        <a href="http://www.fsf.org/blogs/directory/friday-free-software-directory-irc-meetup-august-25th-starting-at-12-00-p-m-edt-16-00-utc" class="tile contenttype-blog-entry" title="Join the FSF and friends Friday, August 25th, from 12:00
+p.m. to 3 p.m. EDT (16:00 to 19:00 UTC) to help improve the Free
+Software Directory, with this week's theme of adding new entries.">
+            Friday Free Software Directory IRC meetup: August 25th starting at 12:00 p.m. EDT/16:00 UTC
+            
+        </a>
+    </dd>
+    
+    
+    <dd class="portletItem even">
+        <a href="http://www.fsf.org/blogs/directory/friday-free-software-directory-irc-meetup-august-18th-starting-at-12-00-p-m-edt-16-00-utc" class="tile contenttype-blog-entry" title="Join the FSF and friends Friday, August 18th, from 12:00
+p.m. to 3 p.m. EDT (16:00 to 19:00 UTC) to help improve the Free
+Software Directory, with this week's theme of adding new entries.">
+            Friday Free Software Directory IRC meetup: August 18th starting at 12:00 p.m. EDT/16:00 UTC
+            
+        </a>
+    </dd>
+    
+
+    <dd class="portletFooter">
+        <span class="portletBottomLeft"></span>
+        <span>
+        <a href="http://www.fsf.org/blogs/recent-blog-posts">
+           <span class="hiddenStructure">Recent blogs - </span>
+           <span>More&hellip;</span>
+        </a>
+        </span>
+        <span class="portletBottomRight"></span>
+    </dd>
+
+</dl>
+</div>
+
+<div class="portletWrapper" data-portlethash="706c6f6e652e7269676874636f6c756d6e0a636f6e746578740a2f6673660a6673662d6576656e74732d727373" id="portletwrapper-706c6f6e652e7269676874636f6c756d6e0a636f6e746578740a2f6673660a6673662d6576656e74732d727373"><div class="portletStaticText portlet-static-fsf-events-rss"><p style="float: right;"><a href="http://www.fsf.org/static/fsforg/rss/events.xml" title="Subscribe to an RSS feed of FSF events"><img src="http://www.fsf.org/static/fsforg/css/img/rss.gif" alt="RSS feed" /></a></p></div>
+
+</div>
+
+<div class="portletWrapper" data-portlethash="706c6f6e652e7269676874636f6c756d6e0a636f6e746578740a2f6673660a6576656e7473" id="portletwrapper-706c6f6e652e7269676874636f6c756d6e0a636f6e746578740a2f6673660a6576656e7473">
+<dl class="portlet portletEvents">
+
+    <dt class="portletHeader">
+        <span class="portletTopLeft"></span>
+        <a href="http://www.fsf.org/events" class="tile">
+            Upcoming Events
+        </a>
+        <span class="portletTopRight"></span>
+    </dt>
+
+    
+    <dd class="portletItem odd">
+        <a href="http://www.fsf.org/events/rms-20170907-chicago" class="tile" title="Chicago, IL">
+            <img width="16" height="16" src="http://www.fsf.org/static/fsforg/css/img/newsitem_icon.gif" alt="Event object code" />
+            Richard Stallman - "Free Software in Ethics and in Practice" (Chicago, IL)
+        </a>
+            <span class="portletItemDetails">
+                
+                <span>Sep 07, 2017 05:30 PM - 08:30 PM</span>
+                
+                <span> &mdash;
+                    Chicago, IL
+                </span>
+            </span>
+    </dd>
+    
+    
+    <dd class="portletItem even">
+        <a href="http://www.fsf.org/events/rms-20170908-chicago" class="tile" title="Chicago, IL">
+            <img width="16" height="16" src="http://www.fsf.org/static/fsforg/css/img/newsitem_icon.gif" alt="Event object code" />
+            CANCELLED - Richard Stallman to speak in Chicago, IL
+        </a>
+            <span class="portletItemDetails">
+                
+                <span>Sep 08, 2017 05:30 PM - 08:00 PM</span>
+                
+                <span> &mdash;
+                    Chicago, IL
+                </span>
+            </span>
+    </dd>
+    
+
+    <dd class="portletFooter">
+        <a href="http://www.fsf.org/events/aggregator/previous" class="tile">
+            <span>
+                Previous events&hellip;
+            </span>
+        </a>
+    </dd>
+
+    <dd class="portletFooter">
+        <a href="http://www.fsf.org/events" class="tile">
+                Upcoming events&hellip;
+        </a>
+        <span class="portletBottomLeft"></span>
+        <span class="portletBottomRight"></span>
+    </dd>
+</dl>
+
+</div>
+
+
+
+
+		        
+		        &nbsp;
+		      </div>
+	      
+
+	</aside>
+	</div>
+
+
+
+	</div></div>
+
+	<div class="visualNoPrint" id="mission-statement">
+
+	  <p class="c">The FSF is a charity with a worldwide mission to advance software freedom &mdash; <a href="https://www.fsf.org/about/">learn about our history and work.</a></p>
+
+	</div>
+
+	<div id="ft" class="visualNoPrint">
+	<footer>
+		<div id="ft-inner" class="custom-doc">
+			<div id="copyright">
+				<p class="c">Copyright &copy; 2004-2017 <a href="https://www.fsf.org/about/contact.html" title="Find out how to contact us">Free
+				Software Foundation</a>, Inc. <a href="https://my.fsf.org/donate/privacypolicy.html">Privacy Policy</a>.</p>
+				<p>This work is licensed under a <a href="https://creativecommons.org/licenses/by-nd/3.0/">Creative
+				Commons Attribution-No Derivative Works 3.0 license (or later
+				version)</a> &mdash; <a href="https://www.gnu.org/licenses/license-list.html#OpinionLicenses">Why this license?</a></p>
+			</div>
+
+			<div id="fsf-links-outer">
+				<div class="yui-g visualNoPrint noMobile" id="fsf-links">
+				<div>
+    <nav>
+    <div class="yui-g first">
+        <div class="yui-u first" id="sitemap-1">
+
+          <p class="netscape4"><a href="#ft">Skip sitemap</a> or <a href="#sitemap-2">skip to licensing items</a></p>
+
+      <ul>
+        <li><a href="http://www.fsf.org/about/">About</a>
+
+        <ul>
+       
+          <li><a href="http://www.fsf.org/about/staff-and-board">Staff and Board</a></li>
+          <li><a href="http://www.fsf.org/about/contact.html">Contact Us</a></li>
+          <li><a href="http://www.fsf.org/press">Press Information</a></li>
+          <li><a href="http://www.fsf.org/resources/jobs">Jobs</a></li>
+          <li><a href="http://www.fsf.org/volunteer">Volunteering and Internships</a></li>
+          
+        </ul></li>
+        <li><a href="http://my.fsf.org/donate/privacypolicy.html">Privacy Policy</a></li>
+        <li><a href="https://weblabels.fsf.org/www.fsf.org/CURRENT/" rel="jslicense">JavaScript Licenses</a></li>
+        <li><a href="http://www.fsf.org/campaigns">Campaigns</a>
+        <ul>
+
+        <li><a href="https://www.gnu.org/">GNU Operating System</a></li>
+        <li><a href="https://defectivebydesign.org/">Defective by Design</a></li>
+        <li><a href="http://endsoftpatents.org/">End Software Patents</a></li>
+        <li><a href="http://playogg.org/">PlayOgg &mdash; free media formats</a></li>
+
+        <li><a href="https://libreplanet.org/">Connect with free software users</a></li>
+      </ul></li>
+      </ul>
+
+    </div>
+
+    <div class="yui-u" id="sitemap-2">
+
+          <p class="netscape4"><a href="#sitemap-3">Skip to general items</a></p>
+
+       <ul>
+        <li><a href="http://www.fsf.org/licensing">Licensing</a>
+        <ul>
+        <li><a href="http://www.fsf.org/licensing/education">Education</a></li>
+        <li><a href="http://www.fsf.org/licensing/licenses">Licenses</a>
+        <ul>
+        <li><a href="https://www.gnu.org/licenses/gpl.html">GNU GPL</a></li>
+
+        <li><a href="https://www.gnu.org/licenses/agpl.html">GNU AGPL</a></li>
+        <li><a href="https://www.gnu.org/licenses/lgpl.html">GNU LGPL</a></li>
+        <li><a href="https://www.gnu.org/licenses/fdl.html">GNU FDL</a></li></ul></li>
+        <li><a href="https://www.gnu.org/licenses/gpl-faq.html">Licensing FAQ</a></li>
+        <li><a href="http://www.fsf.org/licensing/compliance">Compliance</a></li>
+        <li><a href="https://www.gnu.org/licenses/gpl-howto.html">How to use GNU licenses for your own software</a></li></ul></li>
+
+      </ul>
+
+    
+    </div>
+    </div>
+    <div class="yui-g first">
+        <div class="yui-u first" id="sitemap-3">
+
+          <p class="netscape4"><a href="#sitemap-4">Skip to philosophical items</a></p>
+    
+      <ul>
+
+      <li><a href="http://www.fsf.org/news/">Latest News</a><ul>
+        <li><a href="http://www.fsf.org/events/">Upcoming Events</a></li>
+      <li><a href="http://www.fsf.org/blogs/">FSF Blogs</a></li></ul></li>
+      <li><a href="http://www.fsf.org/resources/hw">Hardware Database</a></li>
+      <li><a href="http://directory.fsf.org/">Free Software Directory</a></li>
+
+        <li><a href="http://www.fsf.org/resources/">Free Software Resources</a></li>
+      <li><a href="https://www.fsf.org/patrons">Patrons</a></li>
+      <li><a href="http://www.fsf.org/associate/">Associate Members</a></li>
+        <li><a href="http://www.fsf.org/about/dmca-notice">Copyright Infringement Notification</a></li>
+      <li><a href="http://www.fsf.org/associate/account/">My Account</a></li>
+      </ul>
+
+      
+    </div>
+        <div class="yui-u" id="sitemap-4">
+
+          <p class="netscape4"><a href="#ft">Skip list</a></p>
+
+      <ul>
+        <li><a href="http://donate.fsf.org/">Donate to the FSF</a></li>
+        <li><a href="http://www.fsf.org/jfb">Join the FSF</a></li>
+
+        <li><a href="https://www.gnu.org/philosophy/">Philosophy</a><ul>
+        <li><a href="https://www.gnu.org/philosophy/free-sw.html">The Free Software Definition</a></li>
+        <li><a href="https://www.gnu.org/philosophy/pragmatic.html">Copyleft: Pragmatic Idealism</a></li>
+        <li><a href="https://www.gnu.org/philosophy/free-doc.html">Free Software and Free Manuals</a></li>
+        <li><a href="https://www.gnu.org/philosophy/selling.html">Selling Free Software</a></li>
+        <li><a href="https://www.gnu.org/philosophy/fs-motives.html">Motives for Writing Free Software</a></li>
+
+        <li><a href="https://www.gnu.org/philosophy/right-to-read.html">The Right To Read</a></li>
+        <li><a href="https://www.gnu.org/philosophy/open-source-misses-the-point.html">Why Open Source Misses the Point of Free Software</a></li></ul></li>
+        <li><a href="http://www.fsf.org/sitemap">Complete Sitemap</a></li>
+      </ul>
+      
+    </div>
+    </div>
+</nav>
+
+</div>
+				</div>
+			</div>
+
+		</div>
+
+	</footer>
+	</div>
+
+
+	<div class="c visualNoPrint noMobile" id="powered-by">
+
+	<h5 class="netscape4">fsf.org is powered by:</h5>
+
+	<ul>
+	<li id="powered-by-plone"><a href="http://plone.org/" title="Plone Powered">Plone</a></li>
+	<li id="powered-by-zope"><a href="http://zope.org/" title="Powered by Zope">Zope</a></li>
+	<li id="powered-by-python"><a href="http://python.org/" title="Powered by Python">Python</a></li>
+	<li id="powered-by-civicrm"><a href="http://civicrm.org/" title="Powered by CiviCRM">CiviCRM</a></li>
+	<li id="powered-by-html5"><a href="http://www.w3.org/html">HTML5</a></li>
+	</ul>
+
+	</div>
+
+
+        <form class="c" action="http://www.fsf.org/campaigns/secure-boot-vs-restricted-boot/" method="get" id="choose-language">
+<p><select name="set_language">
+  <option value="ar">Arabic</option>
+  <option value="be">Belarussian</option>
+  <option value="bg">Bulgarian</option>
+  <option value="ca">Catalan</option>
+  <option value="zh">Chinese</option>
+  <option value="kw">Cornish</option>
+  <option value="cs">Czech</option>
+  <option value="da">Danish</option>
+  <option value="en" selected="selected">English</option>
+  <option value="fr">French</option>
+  <option value="de">German</option>
+  <option value="el">Greek</option>
+  <option value="he">Hebrew</option>
+  <option value="hi">Hindi</option>
+  <option value="it">Italian</option>
+  <option value="ja">Japanese</option>
+  <option value="ko">Korean</option>
+  <option value="no">Norwegian</option>
+  <option value="pl">Polish</option>
+  <option value="pt">Portuguese</option>
+  <option value="pt-br">Portuguese (Brazil)</option>
+  <option value="ro">Romanian</option>
+  <option value="ru">Russian</option>
+  <option value="sk">Slovak</option>
+  <option value="es">Spanish</option>
+  <option value="sv">Swedish</option>
+  <option value="tr">Turkish</option>
+  <option value="ur">Urdu</option>
+  <option value="cy">Welsh</option>
+</select> &nbsp; <input type="submit" value="Select language"></p>
+<p><small>Send your feedback on our translations and new translations of pages to <a href="mailto:campaigns@fsf.org">campaigns@fsf.org</a>.</small></p>
+</form>
+
+	</div>
+<script>
+/*
+The only JavaScript code we have right now is the piwik statistics
+
+|@licstart The following is the entire license notice for the
+JavaScript code in this page.|
+
+    Copyright 2012 Matthieu Aubry.
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see http://www.gnu.org/licenses/.
+
+|@licend The above is the entire license notice
+for the JavaScript code in this page.|
+*/
+</script>
+<!-- Piwik -->
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://piwik.fsf.org/" : "http://piwik.fsf.org/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 5);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="http://piwik.fsf.org/piwik.php?idsite=5" style="border:0" alt="" /></p></noscript>
+<!-- End Piwik Tracking Code -->
+
+
+
+	</body>
+	
+<!-- Mirrored from www.fsf.org/campaigns/secure-boot-vs-restricted-boot/whitepaper-web by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 31 Aug 2017 13:24:04 GMT -->
+</html>
+
+	
+
