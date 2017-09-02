@@ -677,7 +677,7 @@ body, html {
 .navi li,#navi input{display:inline;font-size:20px;font-weight:bold;text-transform:lowercase;background-image:none !important;padding:0px}
 .navi li a{padding:14px 6px;color:white;text-decoration:none}
 .navi li a:hover{background-color:red}
-.navi{background-color:maroon;height:50px;color:white !important;margin-top:10px;}
+.navi{background-color:#0078d7;height:50px;color:white !important;margin-top:10px;}
 .navi form{width:300px;position:absolute;top:0;right:0;height:50px;line-height:50px}
 .navi form p{line-height:50px}
 .navi form input{padding:5px}
@@ -818,8 +818,8 @@ html, body, #ft, #coolio {margin-bottom: 0 !important; padding-bottom: 0 !import
 #portal-personaltools {position:absolute;top:-2px;right:-30px;height:45px;padding:0;margin:0;overflow:hidden;text-align:center;margin-top:6px;}
 #hd h5{display:none !important}
 #hd li{display:inline}
-#hd li a{text-align:center;line-height:45px;font-size:13px; padding:10px 5px;font-weight:bold;text-decoration:none;color:#980101}
-#hd li a:hover,#hd li a:active{        background-color:#980101;        color:white !important}
+#hd li a{text-align:center;line-height:45px;font-size:13px; padding:10px 5px;font-weight:bold;text-decoration:none;color:#00adef}
+#hd li a:hover,#hd li a:active{        background-color:#00adef;        color:white !important}
 #join-button {
 }
 
@@ -851,7 +851,7 @@ a:hover{
 }
 
 .search-container {
-    border-top: 4px solid #e74c3c;
+    border-top: 4px solid #00adef;
     background-color: #ECECEC;
     padding-bottom: 10px;
     padding-top: 10px;
@@ -911,7 +911,7 @@ input.form {
 	border-left-style: solid;
 	border-right-style: solid;
 	border-top-style: solid;
-	border-color: #CFD2D4;
+	border-color: #00adef;
 	display: normal;
 	margin-top: 5px;
 	margin-bottom: 5px;
@@ -919,13 +919,13 @@ input.form {
 	margin-right: 5px;
 }
 input.form:focus {
-	border-color: #e67e22;
+	border-color: #00adef;
 	outline: 1;
 	-webkit-box-shadow: none;
 	box-shadow: none;
 }
 input.action-button {
-	background-color: #c0392b;
+	background-color: #00adef;
 	border-bottom-left-radius: 5px;
 	border-bottom-right-radius: 5px;
 	border-top-left-radius: 5px;
@@ -938,10 +938,10 @@ input.action-button {
 	border-top-style: none;
 }
 h2.section-header {
-	border-top-color: #e74c3c;
+	border-top-color: #00adef;
 	border-top-style: solid;
 	border-top-width: 4px;
-	color: #e74c3c;
+	color: #00adef;
 	font-size: 20px;
 	padding-bottom: 10px;
 	padding-top: 10px;
