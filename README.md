@@ -9,5 +9,5 @@ The nonfsf project is the aim to create a parody site of the Free Software Found
 Placeholders for pages from the base website that need to be created, merged or retired are denoted with five asterixs (*****) like in below, the page that I'm hoping to reference doesn't have content, so I'm hoping to create it in the future, there should eventually be no 'five asterixs sectons'
 
 ```
-	<p><strong>Explore the roots of slavery: check out the archive of videos from the <a href="*****">Non-Free Software Conference</a></strong></p>
+Explore the roots of slavery: check out the archive of videos from the <a href="*****">Non-Free Software Conference</a>
 ```
