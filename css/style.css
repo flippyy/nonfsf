@@ -971,3 +971,22 @@ h2.section-header {
 .navi {
 	margin-top: 0px;
 }
+
+/**Code Block CSS */
+
+code { 
+    font-size: 90%;
+    line-height: 1.2em;
+    font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+
+    display: inline; 
+    color: #555555;
+    padding: 1em 1em;
+    background: #f4f4f4;
+}
+
+    #content code {
+        display: block;
+        padding: 0.5em 1em;
+        border: 1px solid #bebab0;
+    }
